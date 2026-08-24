@@ -3,7 +3,7 @@ package atividadesdeaula.aula1;
 public class Aluno extends Pessoa2{
 	private String curso;
 
-	public Aluno(String nome, Integer idade, Endereco endereco, String curso) {
+	public Aluno(String nome, Integer idade, Endereco endereco) {
 		super(nome, idade, endereco);
 		this.curso = null;
 	}
