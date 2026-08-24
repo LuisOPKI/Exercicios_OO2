@@ -12,14 +12,39 @@ public class Clinica {
 		super();
 		this.cnpj = cnpj;
 		this.razaoSocial = razaoSocial;
-		this.mamiferos = new ArrayList<>();
+		this.mamiferos = new ArrayList<Mamifero>();
 	}
 
-	public void cadastrar(Mamifero mamifero) {
-		
+	public void cadastrar(String nome, String raca) {
+		this.mamiferos.add(new Mamifero(nome, raca));
 	}
 	
 	public void listarAnimais() {
 		
 	}
+
+	public String getCnpj() {
+		return cnpj;
+	}
+
+	public void setCnpj(String cnpj) {
+		this.cnpj = cnpj;
+	}
+
+	public String getRazaoSocial() {
+		return razaoSocial;
+	}
+
+	public void setRazaoSocial(String razaoSocial) {
+		this.razaoSocial = razaoSocial;
+	}
+
+	public List<Mamifero> getMamiferos() {
+		return mamiferos;
+	}
+
+	public void setMamiferos(List<Mamifero> mamiferos) {
+		this.mamiferos = mamiferos;
+	}
+	
 }
