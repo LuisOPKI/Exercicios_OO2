@@ -23,13 +23,9 @@ public class AgendaContatos {
 	
 	public void removerContato(String numero){
 		for(Contato contato : contatos) {
-			if(numero.equalsIgnoreCase(contato.getNumero())) {
-				this.contatos.remove(contato);
-				System.out.println("Contato removido!");
-				return;
-			}
+			if(numero.equalsIgnoreCase(contato.getNumero()))
+			System.out.println("Contato removido!");
 		}
-		System.out.println("Contato não encontrado");
 	}
 	
 	public void listaContatos() {
