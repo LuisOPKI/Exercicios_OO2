@@ -16,7 +16,7 @@ public class Reserva {
 
 
 
-	public void realizarReserva(Quarto quarto, Hospede hospede, int diasTotais) throws {
+	public void realizarReserva(Quarto quarto, Hospede hospede, int diasTotais) throws QuartoNaoDisponivelException,HospedeNuloException,DiasTotaisInvalidosException{
 		if(quarto.isDisponibilidade() != true) {
 			throw new QuartoNaoDisponivelException("Quarto não dísponivel!");
 		}else if(hospede == null){
